@@ -16,14 +16,14 @@
     <header>
         <nav>
             <img src="./assets/images/favicon.ico" alt="logo">
-            <a class="link" href="https://github.com/ByteDevMaven">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <path
-                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                        fill="currentColor" />
-                </svg>
-                Github
-            </a>
+            <div class="theme">
+                <button type="button" class="themebtn">Theme</button>
+                <div class="theme-content">
+                    <button id="lightbtn" type="button">Light</button>
+                    <button id="darkbtn" type="button">Dark</button>
+                    <button id="systembtn" type="button">System</button>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -69,7 +69,7 @@
             </div>
         </section>
 
-        <section class="container">
+        <section class="container center">
             <div class="tab-wrap">
 
                 <!-- active tab on page load gets checked attribute -->
@@ -91,66 +91,146 @@
 
                 <div class="tab__content">
                     <h3>"<i>I must not fear. Fear is the mind-killer.</i>" — Paul Atreides</h3>
-                    <p>Hello! I'm Carlos, a Computer Science student passionate about turning ideas into reality through code.</p>
+                    <p>Hello! I'm Carlos, a Computer Science student passionate about turning ideas into reality through
+                        code.</p>
 
-                    <p>I'm a fast learner when it comes to topics that spark my interest, and I love helping others learn efficiently by adapting to their logic.</p>
+                    <p>I'm a fast learner when it comes to topics that spark my interest, and I love helping others
+                        learn efficiently by adapting to their logic.</p>
 
-                    <p>My past and current employers recognize me as a responsible, problem-solving professional. I’ve enhanced the work experience of my colleagues by developing small apps that automate tedious tasks and boost productivity.</p>
+                    <p>My past and current employers recognize me as a responsible, problem-solving professional. I’ve
+                        enhanced the work experience of my colleagues by developing small apps that automate tedious
+                        tasks and boost productivity.</p>
 
-                    <p>I’m always eager to learn and improve, striving to refine my skills and one day reach the level of great coders like Jhey Tompkins. I have a strong passion for backend development, working with languages like PHP and Java—powerful tools for building efficient systems.</p>
+                    <p>I’m always eager to learn and improve, striving to refine my skills and one day reach the level
+                        of great coders like Jhey Tompkins. I have a strong passion for backend development, working
+                        with languages like PHP and Java—powerful tools for building efficient systems.</p>
 
-                    <p>In my free time, I enjoy coding small games and quality-of-life applications. Feel free to check the "Content" tab to see my projects!</p>
+                    <p>In my free time, I enjoy coding small games and quality-of-life applications. Feel free to check
+                        the "Content" tab to see my projects!</p>
 
                     <p>Looking for a developer? Reach out—I’d love to collaborate!</p>
                 </div>
 
                 <div class="tab__content">
-                    <h3>Long Section</h3>
-                    <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget,
-                        lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo,
-                        fringilla
-                        vel, aliquet nec, vulputate eget, arcu.</p>
-
-                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit.
-                        Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus
-                        blandit viverra.</p>
-
-                    <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget,
-                        lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo,
-                        fringilla
-                        vel, aliquet nec, vulputate eget, arcu.</p>
-
-                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit.
-                        Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus
-                        blandit viverra.</p>
+                    <h3>Code</h3>
+                    <p>Here are some of my most notable personal projects, showcasing my skills, creativity, and
+                        dedication to development.</p>
+                    <ul>
+                        <li>
+                            <a class="links" href="https://github.com/ByteDevMaven/Vue-Tickets">WebApp to submit
+                                Ticket Numbers</a>
+                            <p class="muted">WebApp made using Vue js and Google App Script.</p>
+                        </li>
+                        <li>
+                            <a class="links" href="https://github.com/ByteDevMaven/Parking-System-CRUD">Parking
+                                Management System</a>
+                            <p class="muted">Terminal application made with C++.</p>
+                        </li>
+                        <li>
+                            <a class="links" href="https://github.com/ByteDevMaven/Blackjack21">Blackjack 21</a>
+                            <p class="muted">Terminal Blackjack 21 card game coded with java.</p>
+                        </li>
+                        <li>
+                            <a class="links" href="https://github.com/ByteDevMaven/tictactoe-java">TicTacToe Game</a>
+                            <p class="muted">TicTacToe coded with Java and Java Swing for GUI.</p>
+                        </li>
+                        <li>
+                            <a class="links" href="https://github.com/ByteDevMaven/Prime-Sports">Online Shoe Store</a>
+                            <p class="muted"><a href="https://bytedevmaven.github.io/Prime-Sports/" target="_blank"
+                                    rel="noopener noreferrer">Online web store</a> using Google App Script as API.</p>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="tab__content">
-                    <h3>Guestbook</h3>
-                    <form action="" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-                        <label for="site">Site URL</label>
-                        <input type="url" name="site" id="site">
-                        <label for="org">Organization</label>
-                        <input type="text" name="org" id="org">
-                        <label for="avatar">Avatar URL</label>
-                        <input type="url" name="avatar" id="avatar">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+                    <div class="form-container">
+                        <h2>GUESTBOOK FORM</h2>
+                        <p class="description">Fill in this form and I'll get your guestbook entry added.</p>
 
-            </div>
+                        <form action="" method="post" class="guestbook-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="site">URL (site, etc.)</label>
+                                <input type="url" name="site" id="site">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="org">Organisation</label>
+                                <input type="text" name="org" id="org">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="avatar">Avatar URL</label>
+                                <input type="url" name="avatar" id="avatar">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message (Markdown OK)</label>
+                                <textarea name="message" id="message" rows="4" required></textarea>
+                            </div>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
         </section>
     </main>
 
     <footer class="center">
+        <ul class="center">
+            <li>
+                <a class="link" href="https://github.com/ByteDevMaven" rel="noopener noreferrer" target="_blank"
+                    title="See what I'm making on Github">
+                    <svg fill="currentColor" viewBox="0 0 24 24" role="img">
+                        <title>Github icon</title>
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="link" href="https://www.instagram.com/psannn.01" rel="noopener noreferrer" target="_blank"
+                    title="Follow me on Instagram!">
+                    <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>Instagram icon</title>
+                        <path
+                            d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="link" href="https://x.com/Carlos50059841?t=F5mV0LYpZVDAO9WR8MyN8A&s=09"
+                    rel="noopener noreferrer" target="_blank" title="Follow me on Twitter!">
+                    <svg fill="currentColor" viewBox="0 0 24 24" role="img">
+                        <title>Twitter icon</title>
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="link" href="mailto:vrsanchesu@gmail.com" target="_blank" rel="noopener noreferrer"
+                    title="Send me an email!">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" role="img">
+                        <title>Gmail</title>
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
         &copy; 2025 Carlos Sanchez.
     </footer>
 
     <script type="module" src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/theme.js"></script>
 </body>
 
 </html>

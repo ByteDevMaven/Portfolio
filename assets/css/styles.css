@@ -9,6 +9,17 @@
     --dark-color: #e6e3e3;
 
     --primary-color: #06d876;
+    --muted: #858383;
+}
+
+.light {
+    /* forces light color-scheme */
+    color-scheme: light;
+}
+
+.dark {
+    /* forces dark color-scheme */
+    color-scheme: dark;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -37,6 +48,51 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.theme {
+    position: relative;
+    display: inline-block;
+}
+
+.themebtn {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.theme-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 85px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.theme-content button {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.theme-content button:hover {
+    background-color: var(--primary-color);
+}
+
+.theme:hover .theme-content {
+    display: block;
+}
+
 nav {
     display: flex;
     /* Align items in a row */
@@ -53,8 +109,6 @@ a {
 }
 
 .link {
-    display: flex;
-    align-items: center;
     color: inherit;
 }
 
@@ -77,12 +131,16 @@ p {
     margin-bottom: 20px;
 }
 
+ul {
+    list-style: none;
+}
+
 .center {
     margin: 0 auto;
 }
 
 .profile * {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .banner {
@@ -138,6 +196,10 @@ p {
     color: var(--primary-color);
 }
 
+.muted {
+    color: var(--muted);
+}
+
 .tab-wrap {
     transition: 0.3s box-shadow ease;
     /* border-radius: 6px; */
@@ -147,6 +209,7 @@ p {
     position: relative;
     list-style: none;
     margin: 40px 0;
+    gap: 20px;
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
 }
 
@@ -160,6 +223,7 @@ p {
 
 .tab:checked:nth-of-type(1)~.tab__content:nth-of-type(1) {
     opacity: 1;
+    display: block;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     position: relative;
     top: 0;
@@ -170,6 +234,7 @@ p {
 
 .tab:checked:nth-of-type(2)~.tab__content:nth-of-type(2) {
     opacity: 1;
+    display: block;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     position: relative;
     top: 0;
@@ -180,6 +245,7 @@ p {
 
 .tab:checked:nth-of-type(3)~.tab__content:nth-of-type(3) {
     opacity: 1;
+    display: block;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     position: relative;
     top: 0;
@@ -190,6 +256,7 @@ p {
 
 .tab:checked:nth-of-type(4)~.tab__content:nth-of-type(4) {
     opacity: 1;
+    display: block;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     position: relative;
     top: 0;
@@ -266,15 +333,16 @@ p {
     width: 100%;
     z-index: -1;
     opacity: 0;
+    display: none;
     left: 0;
     transform: translateY(-3px);
     /* border-radius: 6px; */
 }
 
 .container {
-    margin: 0 auto;
     display: block;
     max-width: 500px;
+    /* margin-top: -20px; */
 }
 
 .container>*:not(.tab-wrap) {
@@ -318,7 +386,118 @@ p {
     height: 40px;
 }
 
+.form-container {
+    padding: 2rem;
+}
+
+.form-container:hover {
+    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.guestbook-form h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: var(--muted);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.guestbook-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.guestbook-form label {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.guestbook-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.guestbook-form button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.guestbook-form button:hover {
+    opacity: 0.9;
+}
+
+
 footer {
     max-width: 500px;
+    padding: 20px 20px;
     text-align: center;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1rem;
+    }
+
+    .guestbook-form input,
+    .guestbook-form textarea,
+    .guestbook-form button {
+        padding: 0.625rem;
+    }
+
+    .profile .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info,
+    .attributes {
+        padding: 1rem;
+    }
+
+    .tab-wrap {
+        gap: 3px;
+    }
 }

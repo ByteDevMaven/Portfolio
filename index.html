@@ -149,7 +149,7 @@
                         <h2>GUESTBOOK FORM</h2>
                         <p class="description">Fill in this form and I'll get your guestbook entry added.</p>
 
-                        <form action="" method="post" class="guestbook-form">
+                        <form id="guestbook" method="post" class="guestbook-form">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" name="name" id="name" required>
@@ -161,7 +161,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="org">Organisation</label>
+                                <label for="org">Organization</label>
                                 <input type="text" name="org" id="org">
                             </div>
 
@@ -176,6 +176,7 @@
                             </div>
 
                             <button type="submit">Submit</button>
+                            <p id="response-message"></p>
                         </form>
                     </div>
                 </div>
@@ -233,6 +234,7 @@
 
     <script type="module" src="./assets/js/scripts.js"></script>
     <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/guestbook.js"></script>
 </body>
 
 </html>

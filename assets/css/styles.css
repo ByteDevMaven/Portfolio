@@ -403,7 +403,6 @@ ul {
 }
 
 .description {
-    color: light-dark(var(--light-muted), var(--dark-muted));
     margin-bottom: 2rem;
     font-size: 0.95rem;
 }

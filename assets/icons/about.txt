@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Nanum Brush Script
+- Font Author: undefined
+- Font Source: https://fonts.gstatic.com/s/nanumbrushscript/v25/wXK2E2wfpokopxzthSqPbcR5_gVaxazyjqBr1lO97Q.ttf
+- Font License: undefined)

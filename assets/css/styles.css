@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     /* this has to be set to switch between light or dark */
     color-scheme: light dark;
@@ -21,8 +23,6 @@
     /* forces dark color-scheme */
     color-scheme: dark;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     background-color: light-dark(var(--light-bg), var(--dark-bg));

@@ -388,6 +388,10 @@ ul {
     height: 40px;
 }
 
+.text-px {
+    padding: 0.5rem;
+}
+
 .form-container {
     padding: 2rem;
 }
@@ -539,5 +543,13 @@ footer ul li {
 
     .tab-wrap {
         gap: 3px;
+    }
+
+    .text-px {
+        padding: 1.2rem;
+    }
+
+    .post {
+        box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
     }
 }
